@@ -14,6 +14,25 @@
             padding: 20px;
         }
 
+        nav {
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            background-color: #00695c;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #004d40;
+        }
+
         h1 {
             color: #00695c;
             margin-bottom: 10px;
@@ -48,17 +67,24 @@
     </style>
 </head>
 <body>
-     
-    <h1>¡Hola! Soy ANGEL SABDIEL</h1>
-    <p>¡Bienvenido a mi página personal! Me apasiona la tecnología, los videojuegos y soy muy fan de slipknot.</p>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca">Acerca de</a>
+        <a href="#museo-virtual">Museo Virtual</a>
+    </nav>
+
+    <h1 id="inicio">¡Hola! Soy ANGEL SABDIEL</h1>
+    <p id="acerca">¡Bienvenido a mi página personal! Me apasiona la tecnología, los videojuegos y soy muy fan de slipknot.</p>
     <p>Actualmente estudio en el Centro de Estudios de Bachillerato 5/4 Profesor Rafael Ramírez. En mis ratos libres disfruto ver series, programar y editar videos.</p>
 
-   <img src="https://i.pinimg.com/736x/49/9c/46/499c46453ad23a1878cafa733abb3072.jpg" alt="Integrante de Slipknot con máscara y rastas">
-    <h2>Mis intereses y habilidades</h2>
+    <img src="https://i.pinimg.com/736x/49/9c/46/499c46453ad23a1878cafa733abb3072.jpg" alt="Integrante de Slipknot con máscara y rastas">
+    <h2 id="museo-virtual">Mis intereses y habilidades</h2>
     <ul>
-        <li>Edición de video</li>    <li>Programación básica</li>
-        <li>Explorar nuevas tecnologías</li>   <li>Explorar nuevas tecnologías</li>
-                        <li>Escuchar música de Slipknot</li>
+        <li>Edición de video</li>
+        <li>Programación básica</li>
+        <li>Explorar nuevas tecnologías</li>
+        <li>Escuchar música de Slipknot</li>
     </ul>
 
     <p class="info-extra">¡Gracias por visitar mi página!</p>

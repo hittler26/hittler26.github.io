@@ -10,38 +10,47 @@
             background-color: #add8e6; /* azul claro */
             font-family: 'Georgia', serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             color: #1a1a1a;
+        }
+
+        /* Contenedor centrado */
+        .contenedor {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
             text-align: center;
+            box-sizing: border-box;
         }
 
         /* Estilo del título principal */
         h1 {
-            font-size: 3em; /* tamaño usando em */
-            color: #003366; /* color azul oscuro HEX */
+            font-size: 48px; /* usando px */
+            color: #003366; /* azul oscuro HEX */
             font-family: Arial, sans-serif;
         }
 
         /* Estilo del subtítulo */
         h2 {
-            font-size: 2em;
-            color: rgb(60, 60, 60); /* color gris con RGB */
+            font-size: 2.5em; /* usando em */
+            color: rgb(60, 60, 60); /* gris RGB */
             font-style: italic;
         }
 
         /* Estilo del párrafo */
         p {
-            font-size: 1.1em;
-            color: hsl(0, 0%, 20%); /* color con HSL */
-            max-width: 600px;
+            font-size: 110%; /* usando porcentaje */
+            color: hsl(0, 0%, 20%); /* gris oscuro HSL */
+            line-height: 1.6;
             margin: 20px auto;
-            line-height: 1.5;
         }
     </style>
 </head>
 <body>
-    <h1>ANGEL SABDIEL</h1>
-    <h2>PROGRAMADOR Y DISEÑADOR DIGITAL</h2>
-    <p>Me gustan los videojuegos, escuchar música como El Tri, Slipknot, Rammstein, etc.</p>
+    <div class="contenedor">
+        <h1>ANGEL SABDIEL</h1>
+        <h2>PROGRAMADOR Y DISEÑADOR DIGITAL</h2>
+        <p>Me gustan los videojuegos, escuchar música como El Tri, Slipknot, Rammstein, etc.</p>
+    </div>
 </body>
 </html>

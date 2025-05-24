@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Sabdiel</title>
+    <style>
+        /* Estilos generales del cuerpo */
+        body {
+            background-color: #add8e6; /* azul claro */
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 20px;
+            color: #1a1a1a;
+            text-align: center;
+        }
+
+        /* Estilo del título principal */
+        h1 {
+            font-size: 3em; /* tamaño usando em */
+            color: #003366; /* color azul oscuro HEX */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilo del subtítulo */
+        h2 {
+            font-size: 2em;
+            color: rgb(60, 60, 60); /* color gris con RGB */
+            font-style: italic;
+        }
+
+        /* Estilo del párrafo */
+        p {
+            font-size: 1.1em;
+            color: hsl(0, 0%, 20%); /* color con HSL */
+            max-width: 600px;
+            margin: 20px auto;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>ANGEL SABDIEL</h1>
+    <h2>PROGRAMADOR Y DISEÑADOR DIGITAL</h2>
+    <p>Me gustan los videojuegos, escuchar música como El Tri, Slipknot, Rammstein, etc.</p>
+</body>
+</html>

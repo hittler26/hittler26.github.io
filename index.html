@@ -103,6 +103,20 @@
 
     <img src="https://i.pinimg.com/736x/49/9c/46/499c46453ad23a1878cafa733abb3072.jpg" alt="Integrante de Slipknot con máscara y rastas">
        <a href="javascript:void(0);" onclick="mostrarMapa()">VER MAPA MENTAL</a>
+       <div id="mapaMental" style="display: none; margin-top: 30px;">
+        <div style="width: 100%;">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                <iframe title="Mapa Mental" frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/67c79a1e8cd68f99e335488f" allowfullscreen="true" scrolling="yes"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function mostrarMapa() {
+            const mapa = document.getElementById('mapaMental');
+            mapa.style.display = mapa.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
     <h2 id="museo-virtual">Mis intereses y habilidades</h2>
     <ul>
         <li>Edición de video</li>
@@ -117,20 +131,7 @@
         <a href="taza.svg" target="_blank">TAZA</a>
         <a href="invitacion angel.svg" target="_blank">INVITACION ANGEL</a>
     </div>
-      <div id="mapaMental" style="display: none; margin-top: 30px;">
-        <div style="width: 100%;">
-            <div style="position: relative; padding-bottom: 56.25%; height: 0;">
-                <iframe title="Mapa Mental" frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/67c79a1e8cd68f99e335488f" allowfullscreen="true" scrolling="yes"></iframe>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function mostrarMapa() {
-            const mapa = document.getElementById('mapaMental');
-            mapa.style.display = mapa.style.display === 'none' ? 'block' : 'none';
-        }
-    </script>
+   
     <p class="info-extra">¡Gracias por visitar mi página!</p>
 
 </body>

@@ -1,118 +1,243 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Perfil de ANGEL</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #e9ecef;
-      color: #333;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mi Página Personal</title>
+    <style>
+        body {
+            background-color: #e0f7fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
 
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: #222;
-      padding: 15px 0;
-      text-align: center;
-      z-index: 1000;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    }
+        nav {
+            margin-bottom: 30px;
+        }
 
-    nav a {
-      background-color: #444;
-      color: white;
-      padding: 10px 20px;
-      margin: 0 8px;
-      text-decoration: none;
-      border-radius: 25px;
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
+        nav a {
+            background-color: #00695c;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
 
-    nav a:hover {
-      background-color: #666;
-    }
+        nav a:hover {
+            background-color: #004d40;
+        }
 
-    .contenido {
-      margin-top: 100px;
-      padding: 30px;
-      display: flex;
-      justify-content: center;
-    }
+        h1 {
+            color: #00695c;
+            margin-bottom: 10px;
+        }
 
-    .perfil {
-      position: relative;
-      background-color: #fff;
-      padding: 30px;
-      max-width: 700px;
-      width: 100%;
-      border-radius: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
 
-    .perfil img {
-      position: absolute;
-      top: -60px;
-      right: -60px;
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 5px solid #444;
-      object-fit: cover;
-      background-color: white;
-    }
+        img {
+            width: 300px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
 
-    .perfil h1 {
-      margin-top: 0;
-      font-size: 2em;
-      color: #444;
-    }
+        ul {
+            list-style-type: square;
+            padding-left: 0;
+            text-align: left;
+            margin: 0 auto;
+            display: inline-block;
+        }
 
-    .perfil p {
-      margin-top: 100px;
-      font-size: 1.1em;
-      line-height: 1.6;
-    }
+        li {
+            margin: 8px 0;
+        }
 
-    .boton-pagina-personal {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 10px 20px;
-      background: #00796b;
-      color: #fff;
-      border-radius: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+        .info-extra {
+            margin-top: 30px;
+            font-weight: bold;
+        }
 
-    .boton-pagina-personal:hover {
-      background: #004d40;
-    }
-  </style>
+        .botones {
+            margin-top: 30px;
+        }
+
+        .botones a, .botones button {
+            background-color: #00796b;
+            color: white;
+            padding: 12px 24px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: background-color 0.3s, transform 0.2s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .botones a:hover, .botones button:hover {
+            background-color: #004d40;
+            transform: scale(1.05);
+        }
+
+        #loginForm {
+            margin-bottom: 30px;
+        }
+
+        #loginForm input[type="text"], #loginForm input[type="password"] {
+            padding: 8px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #loginForm input[type="submit"] {
+            background-color: #00796b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #loginForm input[type="submit"]:hover {
+            background-color: #004d40;
+        }
+
+        #errorMessage {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
 
-  <nav>
-    <a href="#contacto1">Correo</a>
-    <a href="#contacto2">Instagram</a>
-    <a href="#contacto3">WhatsApp</a>
-  </nav>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca">Acerca de</a>
+        <a href="#museo-virtual">Museo Virtual</a>
+    </nav>
 
-  <div class="contenido">
-    <div class="perfil">
-      <h1>ANGEL</h1>
-      <img src="https://i.iheart.com/v3/catalog/artist/58184?ops=fit(480%2C480)%2Crun(%22circle%22)" alt="Imagen de perfil">
-      <p>Me gusta los videojuegos de aventura, acción, carreras de coches, también juegos inspirados en la Segunda Guerra Mundial y me gusta la música de casi todo, menos reguetón.</p>
+    <h1 id="inicio">¡Hola! Soy ANGEL SABDIEL</h1>
+    <p id="acerca">¡Bienvenido a mi página personal! Me apasiona la tecnología, los videojuegos y soy muy fan de Slipknot.</p>
+    <p>Actualmente estudio en el Centro de Estudios de Bachillerato 5/4 Profesor Rafael Ramírez. En mis ratos libres disfruto ver series, programar y editar videos.</p>
 
-      <a href="mi-pagina.html" class="boton-pagina-personal">Ir a Mi Página Personal</a>
+    <img src="https://i.pinimg.com/736x/49/9c/46/499c46453ad23a1878cafa733abb3072.jpg" alt="Integrante de Slipknot con máscara y rastas">
+
+    <!-- Botón de mapa antes de intereses -->
+    <div class="botones">
+        <a href="javascript:void(0);" onclick="mostrarMapa()">VER MAPA MENTAL</a>
     </div>
-  </div>
+    <div id="mapaMental" style="display: none; margin-top: 30px;">
+        <div style="width: 100%;">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                <iframe title="Mapa Mental" frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/67c79a1e8cd68f99e335488f" allowfullscreen="true" scrolling="yes"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <h2 id="museo-virtual">Mis intereses y habilidades</h2>
+    <ul>
+        <li>Edición de video</li>
+        <li>Programación básica</li>
+        <li>Explorar nuevas tecnologías</li>
+        <li>Escuchar música de Slipknot</li>
+    </ul>
+
+    <!-- FORMULARIO DE LOGIN -->
+    <form id="loginForm">
+        <h3>Inicia sesión para acceder al museo virtual</h3>
+        <input type="text" id="username" placeholder="Usuario" required />
+        <input type="password" id="password" placeholder="Contraseña" required />
+        <input type="submit" value="Entrar" />
+        <div id="errorMessage"></div>
+    </form>
+
+    <!-- BOTÓN PARA MOSTRAR CONTENIDO PROTEGIDO (solo visible si está logueado) -->
+    <div id="botonMostrarContenido" class="botones" style="display: none;">
+        <button onclick="mostrarContenidoProtegido()">Mostrar contenido protegido</button>
+    </div>
+
+    <!-- BOTÓN CERRAR SESIÓN (solo visible si está logueado) -->
+    <div id="botonCerrarSesion" class="botones" style="display: none;">
+        <button onclick="cerrarSesion()">Cerrar sesión</button>
+    </div>
+
+    <!-- CONTENIDO PROTEGIDO (botones ocultos hasta que se presione el botón) -->
+    <div id="contenidoProtegido" class="botones" style="display: none;">
+        <a href="gato.svg" target="_blank">GATO</a>
+        <a href="pacman.svg" target="_blank">PACMAN</a>
+        <a href="taza.svg" target="_blank">TAZA</a>
+        <a href="invitacion angel.svg" target="_blank">INVITACION ANGEL</a>
+    </div>
+
+    <!-- BOTÓN PARA IR AL PERFIL -->
+    <div class="botones">
+        <a href="perfil.html">Ir al Perfil de ANGEL</a>
+    </div>
+
+    <p class="info-extra">¡Gracias por visitar mi página!</p>
+
+    <script>
+        function mostrarMapa() {
+            const mapa = document.getElementById('mapaMental');
+            mapa.style.display = mapa.style.display === 'none' ? 'block' : 'none';
+        }
+
+        // Elementos importantes
+        const loginForm = document.getElementById('loginForm');
+        const errorMessage = document.getElementById('errorMessage');
+        const botonMostrarContenido = document.getElementById('botonMostrarContenido');
+        const botonCerrarSesion = document.getElementById('botonCerrarSesion');
+        const contenidoProtegido = document.getElementById('contenidoProtegido');
+
+        // Manejar login
+        loginForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            if (username === 'ANGEL' && password === '6018') {
+                errorMessage.textContent = '';
+                loginForm.style.display = 'none';
+                botonMostrarContenido.style.display = 'block';
+                botonCerrarSesion.style.display = 'block';
+            } else {
+                errorMessage.textContent = 'Usuario o contraseña incorrectos.';
+            }
+        });
+
+        // Mostrar u ocultar contenido protegido
+        function mostrarContenidoProtegido() {
+            if (contenidoProtegido.style.display === 'none') {
+                contenidoProtegido.style.display = 'block';
+            } else {
+                contenidoProtegido.style.display = 'none';
+            }
+        }
+
+        // Cerrar sesión
+        function cerrarSesion() {
+            contenidoProtegido.style.display = 'none';
+            botonMostrarContenido.style.display = 'none';
+            botonCerrarSesion.style.display = 'none';
+            loginForm.style.display = 'block';
+            loginForm.reset();
+            errorMessage.textContent = '';
+        }
+    </script>
 
 </body>
 </html>

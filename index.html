@@ -182,6 +182,11 @@
         <a href="invitacion angel.svg" target="_blank">INVITACION ANGEL</a>
     </div>
 
+    <!-- BOTÓN PARA IR AL PERFIL -->
+    <div class="botones">
+        <a href="perfil.html">Ir al Perfil de ANGEL</a>
+    </div>
+
     <p class="info-extra">¡Gracias por visitar mi página!</p>
 
     <script>
@@ -225,12 +230,10 @@
 
         // Cerrar sesión
         function cerrarSesion() {
-            // Oculta todo lo protegido y muestra el formulario
             contenidoProtegido.style.display = 'none';
             botonMostrarContenido.style.display = 'none';
             botonCerrarSesion.style.display = 'none';
             loginForm.style.display = 'block';
-            // Limpia campos y error
             loginForm.reset();
             errorMessage.textContent = '';
         }

@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>  
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
@@ -187,6 +187,18 @@
         <a href="perfil.html">Ir al Perfil de ANGEL</a>
     </div>
 
+    <!-- VIDEO PERSONAL -->
+    <div class="botones">
+        <button id="toggleVideoBtn" onclick="toggleVideo()">Mostrar Video</button>
+    </div>
+
+    <div id="videoContainer" style="display: none; margin-top: 20px;">
+        <video id="videoPersonal" controls style="width: 100%; max-width: 720px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+            <source src="VID-20250528-WA0001.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+    </div>
+
     <p class="info-extra">¡Gracias por visitar mi página!</p>
 
     <script>
@@ -236,6 +248,22 @@
             loginForm.style.display = 'block';
             loginForm.reset();
             errorMessage.textContent = '';
+        }
+
+        // Mostrar/Ocultar video personal
+        function toggleVideo() {
+            const videoContainer = document.getElementById('videoContainer');
+            const video = document.getElementById('videoPersonal');
+            const button = document.getElementById('toggleVideoBtn');
+
+            if (videoContainer.style.display === 'none') {
+                videoContainer.style.display = 'block';
+                button.textContent = 'Ocultar Video';
+            } else {
+                video.pause();
+                videoContainer.style.display = 'none';
+                button.textContent = 'Mostrar Video';
+            }
         }
     </script>
 
